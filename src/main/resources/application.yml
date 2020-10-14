@@ -1,0 +1,16 @@
+spring:
+  r2dbc:
+    url: r2dbc:mysql://127.0.0.1:3306/webflux?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+  application:
+    name: webflux
+logging:
+  level:
+    root: info
+    org:
+      springframework:
+        data:
+          r2dbc:
+            connectionfactory: info
+        transaction: info
